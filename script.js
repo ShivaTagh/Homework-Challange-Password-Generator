@@ -4,7 +4,7 @@
   var passwordText = document.querySelector("#password");
 
 
-  // variables for all upper and lowercase letters, numbers, and characters)
+  // variables Arrays
   var specialCharacters = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
   var lowercaseAlphabet = "abcdefghijklmnopqrstuvwxyz";
   var uppercaseAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -14,19 +14,19 @@
   // Add event listener to generate button
   generateBtn.addEventListener("click", writePassword);
 
-  // Write a function that generates a random password in the "text area" box
+  // Write a function that generates a random password in the page
   function writePassword() {
     var randomString = "";
     passwordText.value = password;
 
-  // Chose password criteria
+  // Ask the user for which characters to include
   var lowercase = confirm("Do you want your password to contain lowercase?");
   var uppercase = confirm("Do you want your password to contain uppercase?");
   var num = confirm("Do you want your password to contain numbers?");
   var specialChar = confirm("Do you want your password to contain special characters?");
   var passwordLength = prompt("Choose a password length of at least 8 characters and no more than 128 characters.");
 
-  // Write another function that checks if it's between 8 and 128 characters
+  // Check for the length of the password
   if (passwordLength < 8 || passwordLength > 128) {
     var passwordLength = prompt("Choose a password length of at least 8 characters and no more than 128 characters.");
     alert("Your password is not between 8 characters and 128 characters. Please try again.");
@@ -35,8 +35,8 @@
   // Ensure that if someone clicks cancel for all password criteria that it asks them to choose at least one
   else if (!lowercase && !uppercase && !num && !specialChar) {
     alert("Error, invalid character type.\nPlease include at least one type of character.");
-    var lowercase = confirm("Do you want your password to contain lowercase letters?");
-    var uppercase = confirm("Do you want your password to contain uppercase letters?");
+    var lowercase = confirm("Do you want your password to contain lowercase?");
+    var uppercase = confirm("Do you want your password to contain uppercase?");
     var num = confirm("Do you want your password to contain numbers?");
     var specialChar = confirm("Do you want your password to contain special characters?");
   }
