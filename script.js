@@ -28,8 +28,9 @@
 
   // Check for the length of the password
   if (passwordLength < 8 || passwordLength > 128) {
-    var passwordLength = prompt("Choose a password length of at least 8 characters and no more than 128 characters.");
     alert("Your password is not between 8 characters and 128 characters. Please try again.");
+    var passwordLength = prompt("Choose a password length of at least 8 characters and no more than 128 characters.");
+    return "";
   }
 
   // Ensure that if someone clicks cancel for all password criteria that it asks them to choose at least one
@@ -39,6 +40,7 @@
     var uppercase = confirm("Do you want your password to contain uppercase?");
     var num = confirm("Do you want your password to contain numbers?");
     var specialChar = confirm("Do you want your password to contain special characters?");
+    return "";
   }
 
   // Use the criteria that are selected to generate the password
