@@ -63,3 +63,9 @@ I created a random password generator by adding scripts to the json file. For th
 
 * Deployed URL Link: https://shivatagh.github.io/Homework-Challange-Password-Generator/
 * GitHub Repository Link: https://github.com/ShivaTagh/Homework-Challange-Password-Generator.git
+
+### Acknowledgments
+
+Contributions and help was provided from the following:
+
+Instructor: Samantha Randolph
