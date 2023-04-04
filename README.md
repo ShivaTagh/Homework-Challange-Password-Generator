@@ -43,6 +43,17 @@ I created a random password generator by adding scripts to the json file. For th
 
 * A function that would generate a password based on the information returned from these prompts and confirms.
 
+### Usage
+In order to run the application, click on the https://shivatagh.github.io/Homework-Challange-Password-Generator/
+  Once you have been redirected to the web-page, click on the "Generate Password" button
+  You will be prompted with a series of questions regarding your password criteria (note, at least one must be selected, or else an error will pop up and the prompts     will restart), including:
+The desired password length (on the condition that it is between 8 and 128 characters long)
+* Whether you want the password to contain uppercase letters
+* Whether you want the password to contain lowercase letters
+* Whether you want the password to contain numbers
+* Whether you want the password to contain special characters
+* When all prompts are answered, you will be provided with a password which is generated according to your responses
+
 ### Languages
 * HTML
 * CSS
@@ -50,5 +61,5 @@ I created a random password generator by adding scripts to the json file. For th
 
 ## Links
 
-* Deployed URL Link: 
+* Deployed URL Link: https://shivatagh.github.io/Homework-Challange-Password-Generator/
 * GitHub Repository Link: https://github.com/ShivaTagh/Homework-Challange-Password-Generator.git
